@@ -5,7 +5,7 @@ create table lte_data.input_form_terms (
 	term_uri text null,
 	ontology_id text null,
 	constraint input_form_terms_pk primary key(id),
-	constraint input_form_terms_ontology_id foreign key (ontology_id) references ontologies(id)
+	constraint input_form_terms_ontology_id foreign key (ontology_id) references ontologies(id),
 	constraint input_form_terms_preferred_term_id foreign key (preferred_term_id) references input_form_terms(id),
 	constraint input_form_terms_term_uri_unq unique (term_uri)
 );
