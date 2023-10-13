@@ -30,9 +30,12 @@ create table xxxxxx_terms (
 	term_uri text null,
 	ontology_id text null,
 	constraint xxxxxx_terms_pk primary key(id),
-	constraint xxxxxx_terms_ontology_id foreign key (ontology_id) references ontologies(id)
+	constraint xxxxxx_terms_ontology_id foreign key (ontology_id) references ontologies(id),
+    constraint xxxxxx_term_uri_unq unique (term_uri)
 );
 ```
+
+The `term_uri` column is unqiue to prevent duplicates from being added. 
 
 #### Why are there multiple terms tables even though they look the same?
 The principle of separation of concerns is implemented, meaning that all entries in a term table are used in one and only context. While a single table can be appealing because all terms can be managed in one table, this table would have multiple FK relations to data tables where each related table should only reference a subset of values in the terms table. However, this could risk invalid terms could be applied. Separating terms into tables for specific uses removes this risk and ensures all terms listed are valid for any FK relationship.
