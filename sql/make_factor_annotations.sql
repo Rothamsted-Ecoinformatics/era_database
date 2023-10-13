@@ -4,7 +4,7 @@ create table lte_data.factor_annotations (
 	class_label text not null,
 	class_uri text null,
 	ontology_id text null,
-	constraint factors_pk primary key(id),
+	constraint factor_annotations_pk primary key(id),
 	constraint factor_annotations_ontology_id foreign key (ontology_id) references ontologies(id)
 );
 
