@@ -19,6 +19,7 @@
 
 Terms tables are dimension tables which can be used to provide semantic annotation for records in a table. The records in a terms table are curated from existing ontologies where available. A term can either be preferred or alternative, and either can be used to map to a data record, but an alternative term must always have a reference to a preferred term. 
 
+#### Term tables structure
 Term tables generally follow the same format which is:
 
 ```sql
@@ -32,6 +33,9 @@ create table xxxxxx_terms (
 	constraint xxxxxx_terms_ontology_id foreign key (ontology_id) references ontologies(id)
 );
 ```
+
+#### Why are there multiple terms tables even though they look the same?
+The principle of separation of concerns is implemented, meaning that all entries in a term table are used in one and only context. While a single table can be appealing because all terms can be managed in one table, this table would have multiple FK relations to data tables where each related table should only reference a subset of values in the terms table. However, this could risk invalid terms could be applied. Separating terms into tables for specific uses removes this risk and ensures all terms listed are valid for any FK relationship.
 
 ### Postgres datatype usage
 
