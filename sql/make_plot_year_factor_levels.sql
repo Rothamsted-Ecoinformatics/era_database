@@ -29,7 +29,7 @@ create table lte_data.plot_year_factor_levels (
 	constraint plot_year_factor_levels_experiment_factor_level_id_fk foreign key (experiment_factor_level_id) references experiment_factor_levels(id),
 	constraint plot_year_factor_levels_input_form_term_id_fk foreign key (input_form_term_id) references input_form_terms(id),
 	constraint plot_year_factor_levels_input_form_amount_unit_id_fk foreign key (input_form_amount_unit_id) references input_form_amount_units(id),
-	constraint plot_year_factor_levels_nutrient_term_id_fk foreign key (nutrient_id) references nutrient_terms(id),
+	constraint plot_year_factor_levels_nutrient_term_id_fk foreign key (nutrient_term_id) references nutrient_terms(id),
 	constraint plot_year_factor_levels_product_id_fk foreign key (product_id) references products(id),
 	constraint plot_year_factor_levels_application_timing_term_id_fk foreign key (application_timing_term_id) references application_timing_terms(id),
 	constraint plot_year_factor_levels_application_method_term_id_fk foreign key (application_method_term_id) references application_method_terms(id)
@@ -49,7 +49,7 @@ comment on column lte_data.plot_year_factor_levels.product_id IS 'Optional FK to
 comment on column lte_data.plot_year_factor_levels.input_form_term_id IS 'Optional FK to identify the material form of factor levels which are inputs, for example: ammonium nitrate';
 comment on column lte_data.plot_year_factor_levels.input_form_amount IS 'The amount of input material applied';
 comment on column lte_data.plot_year_factor_levels.input_form_amount_unit_id IS 'Units for the amount of input material applied';
-comment on column lte_data.plot_year_factor_levels.nutrient_id IS 'Optional field for nutrient inputs and can be used in addition to input_form. It describes the nutrient element, for example, Nitrogen';
+comment on column lte_data.plot_year_factor_levels.nutrient_term_id IS 'Optional field for nutrient inputs and can be used in addition to input_form. It describes the nutrient element, for example, Nitrogen';
 comment on column lte_data.plot_year_factor_levels.nutrient_amount is 'The amount of nutrient applied.';
 comment on column lte_data.plot_year_factor_levels.nutrient_amount_unit_id is 'Units for the amount of nutrient applied.';
 comment on column lte_data.plot_year_factor_levels.application_timing_term_id is 'Optional FK to a standardised list of application timing terms';
