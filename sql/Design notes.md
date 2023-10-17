@@ -31,7 +31,7 @@ create table xxxxxx_terms (
 	ontology_id text null,
 	constraint xxxxxx_terms_pk primary key(id),
 	constraint xxxxxx_terms_ontology_id foreign key (ontology_id) references ontologies(id),
-    constraint xxxxxx_term_uri_unq unique (term_uri)
+    constraint xxxxxx_terms_uri_unq unique (term_uri)
 );
 ```
 
