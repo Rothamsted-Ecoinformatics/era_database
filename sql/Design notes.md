@@ -40,6 +40,10 @@ The `term_uri` column is unqiue to prevent duplicates from being added.
 #### Why are there multiple terms tables even though they look the same?
 The principle of separation of concerns is implemented, meaning that all entries in a term table are used in one and only context. While a single table can be appealing because all terms can be managed in one table, this table would have multiple FK relations to data tables where each related table should only reference a subset of values in the terms table. However, this could risk invalid terms could be applied. Separating terms into tables for specific uses removes this risk and ensures all terms listed are valid for any FK relationship.
 
+### Plot Group Collections tables
+
+The plot group collections tables are used to identify a group of plots related by some design feature of the experiment. Typically these are design features which have not been imposed on the plots through a statistical design feature such as a row, column or block, rather they are arbitrary groups. These tables are typically only relevant to te Classicals and other older experiments, with an example use case being Broadbalk strips and sections.
+
 ### Postgres datatype usage
 
 The e-RA database is implemented in PostgreSQL. The following rules for using PostgreSQL datatypes should be followed
