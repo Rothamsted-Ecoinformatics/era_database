@@ -30,6 +30,7 @@ create table lte_data.plot_year_factor_levels (
 	constraint plot_year_factor_levels_input_form_term_id_fk foreign key (input_form_term_id) references input_form_terms(id),
 	constraint plot_year_factor_levels_input_form_amount_unit_id_fk foreign key (input_form_amount_unit_id) references input_form_amount_units(id),
 	constraint plot_year_factor_levels_nutrient_term_id_fk foreign key (nutrient_term_id) references nutrient_terms(id),
+	constraint plot_year_factor_levels_nutrient_amount_unit_id_fk foreign key (nutrient_amount_unit_id) references nutrient_amount_units(id),
 	constraint plot_year_factor_levels_product_id_fk foreign key (product_id) references products(id),
 	constraint plot_year_factor_levels_application_timing_term_id_fk foreign key (application_timing_term_id) references application_timing_terms(id),
 	constraint plot_year_factor_levels_application_method_term_id_fk foreign key (application_method_term_id) references application_method_terms(id)
