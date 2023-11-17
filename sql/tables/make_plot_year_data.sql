@@ -1,5 +1,5 @@
 create table lte_data.plot_year_data (
-	id serial not null,
+	id int not null,
 	plot_year_id int not null,
 	variable_id int not null,
 	dataset_id int not null,
@@ -16,6 +16,7 @@ create table lte_data.plot_year_data (
 
 comment on table lte_data.plot_year_data is 'plot_year_data is used to manage plot year data. The table is essentially a name value pair structure.';
 
+comment on column lte_data.plot_year_data.id is 'PK value. The primary key value is set in the loading database table plot_year_data_ldr.';
 comment on column lte_data.plot_year_data.plot_year_id IS 'This is an FK to the plot_year.';
 comment on column lte_data.plot_year_data.variable_id IS 'This is an FK to the variable being measured.';
 comment on column lte_data.plot_year_data.dataset_id IS 'This is an FK to the dataset the value belongs to.';
