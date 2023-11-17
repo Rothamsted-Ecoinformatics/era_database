@@ -1,0 +1,3 @@
+# loading database
+
+This folder contains SQL DDL scrpts for bulding the loading database tables. These tables are used for staging new datasets before loading into the main database. The tables mirror the structure of data tables in the main database. A key difference between these tables and data tables is these table allocate primary key values using Postgres' serial type. These key values are then imported to the main database, therefore the corresponding main database tables implement these key values as int data types. 
