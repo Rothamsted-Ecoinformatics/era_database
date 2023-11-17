@@ -1,5 +1,5 @@
 create table lte_data.dataset_contributors (
-	id serial not null,
+	id int2 not null,
 	dataset_id int not null, 
 	contributor_id int2 not null,
 	contributor_role_id int2 not null,
@@ -13,6 +13,7 @@ create table lte_data.dataset_contributors (
 comment on table lte_data.dataset_contributors is 'dataset_contributors links a datasets to the people who have contributed to its development. 
 Their contribution is indicated by the contributor role and can be expanded on in the notes.';
 
+comment on column lte_data.dataset_contributors.id is 'PK value. The primary key value is set in the loading database table dataset_contributors_ldr.';
 comment on column lte_data.dataset_contributors.dataset_id is 'FK to the dataset the contribution is for.';
 comment on column lte_data.dataset_contributors.contributor_id is 'FK to the contributor to the dataset.';
 comment on column lte_data.dataset_contributors.contributor_role_id is 'FK to the contributors role in developing the dataset.';

@@ -1,5 +1,5 @@
 create table lte_data.datasets (
-	id serial not null,
+	id int not null,
 	experiment_id smallint not null,
 	version_number SMALLINT NOT NULL,
 	dataset_title text not null,
@@ -18,6 +18,7 @@ comment on table lte_data.datasets is 'datasets is a grouping of logically relat
 grouped based on criteria such as timing of collection and protocols applied. Datasets are version controlled and an entire dataset can be 
 superceeded, but datasets should not be deleted.';
 
+comment on column lte_data.datasets.id is 'The primary key value. the value is set in the corresponding loading database table datasets_ldr.';
 comment on column lte_data.datasets.experiment_id is 'The experiment the dataset belongs to.';
 comment on column lte_data.datasets.version_number is 'The dataset version number. Version numbers are seqeuntial integers starting at 1.';
 comment on column lte_data.datasets.dataset_title is 'A descriptive title for the dataset which should include the type of data and the timing, for example Broadbalk grain yield data 2023.';

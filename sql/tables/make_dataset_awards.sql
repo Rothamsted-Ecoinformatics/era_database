@@ -9,3 +9,5 @@ create table lte_data.dataset_awards (
 );
 
 comment on table lte_data.dataset_awards is 'dataset_awards is a resolution table linking a dataset to its funding awards.';
+
+comment on column lte_data.dataset_awards.id is 'The primary key value. the value is set in the corresponding loading database table dataset_awards_ldr.'
