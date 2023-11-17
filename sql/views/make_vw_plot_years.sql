@@ -1,6 +1,6 @@
 drop view vw_plot_years;
 create view vw_plot_years as 
-select py.id, e.experiment_code, e.experiment_uuid, e.experiment_name, 
+select py.id as plot_year_id, p.id as plot_id, c.id as crop_id, p.experiment_id, e.experiment_code, e.experiment_uuid, e.experiment_name, 
 	p.plot_label, p.plot_guid, p.main_plot_label, p.sub_plot_level_1_label, p.sub_plot_level_2_label, p.sub_plot_level_3_label, p.original_label, 
 	py.plot_year, c.crop_name, c.crop_name_uri, py.harvest_area_ha, py.treatment_label, py.description, py.deviations
 from lte_data.experiments e
