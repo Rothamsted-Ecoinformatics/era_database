@@ -11,7 +11,7 @@ create table awards (
 );
 
 comment on table lte_data.awards is 'awards is used to identify the funding awards used to collect and manage datasets. With the funders table, awards conforms to the fields 
-necessary for citing funding in the DataCite metadata schema..';
+necessary for citing funding in the DataCite metadata schema.';
 
 comment on column lte_data.awards.funder_id is 'FK for the award funder.';
 comment on column lte_data.awards.award_number is 'The funders unique code or number for identifying the award.';
