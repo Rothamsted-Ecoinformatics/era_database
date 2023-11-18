@@ -1,0 +1,15 @@
+insert into lte_data.nutrient_amount_units(symbol, term_label, unit_system) values 
+	('kg N ha-1','kilograms of nitrogen per hectare','metric'),
+	('kg P ha-1','kilograms of phosphorus per hectare','metric'),
+	('kg K ha-1','kilograms of potassium per hectare','metric'),
+	('kg Na ha-1','kilograms of sodium per hectare','metric'),
+	('kg Mg ha-1','kilograms of magnesium per hectare','metric'),
+	('kg Mn ha-1','kilograms of manganese per hectare','metric'),
+	('kg S ha-1','kilograms of sulfur per hectare','metric'),
+	('lb N acre-1','pounds of nitrogen per acre','imperial'),
+	('lb P acre-1','pounds of phosphorus per acre','imperial'),
+	('lb K acre-1','pounds of potassium per acre','imperial'),
+	('lb Na acre-1','pounds of sodium per acre','imperial'),
+	('lb Mg acre-1','pounds of magnesium per acre','imperial'),
+	('lb Mn acre-1','pounds of manganese per acre','imperial'),
+	('lb S acre-1','pounds of sulfur per acre','imperial');
