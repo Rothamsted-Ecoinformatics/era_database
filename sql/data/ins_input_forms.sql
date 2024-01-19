@@ -1,13 +1,15 @@
 insert into lte_data.input_form_terms(term_label, term_uri, ontology_id) values 
+	('ammonium sulfate + ammonium nitrate',null,null);
+	('chalk','http://purl.obolibrary.org/obo/ENVO_00002054','ENVO'),
 	('ammonium salts','http://purl.obolibrary.org/obo/CHEBI_47704','CHEBI'),
 	('ammonium sulfate','http://purl.obolibrary.org/obo/CHEBI_62946','CHEBI'),
 	('ammonium chloride','http://purl.obolibrary.org/obo/CHEBI_31206','CHEBI'),
 	('ammonium carbonate','http://purl.obolibrary.org/obo/CHEBI_184335','CHEBI'),
 	('ammonium nitrate','http://purl.obolibrary.org/obo/CHEBI_63038','CHEBI'),
 	('calcium ammonium nitrate','http://purl.obolibrary.org/obo/CHEBI_91238','CHEBI'),
-	('farmyard manure','http://purl.obolibrary.org/obo/ENVO_00003884','CHEBI'),
-	('poultry manure','http://purl.obolibrary.org/obo/ENVO_01001117','CHEBI'),
-	('wheat straw','http://purl.obolibrary.org/obo/ENVO_00003869','CHEBI'),
+	('farmyard manure','http://purl.obolibrary.org/obo/ENVO_00003884','ENVO'),
+	('poultry manure','http://purl.obolibrary.org/obo/ENVO_01001117','ENVO'),
+	('wheat straw','http://purl.obolibrary.org/obo/ENVO_00003869','ENVO'),
 	('magnesium sulfate monohydrate',null,null),
 	('magnesium phosphate','http://purl.obolibrary.org/obo/CHEBI_190298','CHEBI'),
 	('calcium magnesium carbonate','http://purl.obolibrary.org/obo/CHEBI_31793','CHEBI'),
@@ -25,8 +27,8 @@ insert into lte_data.input_form_terms(term_label, term_uri, ontology_id) values
 	('bone ash',null,null),
 	('superphosphate','http://aims.fao.org/aos/agrovoc/c_7521','AGROVOC'),
 	('superphosphate of lime',null,null),
-	('single superphosphate','http://purl.obolibrary.org/obo/AGRO_00002064','AGROVOC'),
-	('triple superphosphate','http://purl.obolibrary.org/obo/AGRO_00002065','AGROVOC'),
+	('single superphosphate','http://purl.obolibrary.org/obo/AGRO_00002064','AGRO'),
+	('triple superphosphate','http://purl.obolibrary.org/obo/AGRO_00002065','AGRO'),
 	('rapeseed cake','http://aims.fao.org/aos/agrovoc/c_16027','AGROVOC'),
 	('castor meal',null,null),
 	('Liebig''s wheat manure',null,null),
@@ -36,6 +38,12 @@ insert into lte_data.input_form_terms(term_label, term_uri, ontology_id) values
 	('tapioca','http://purl.obolibrary.org/obo/FOODON_03307663','FOODON'),
 	('compost','http://purl.obolibrary.org/obo/ENVO_00002170','ENVO')
 ;
+
+select * from input_form_terms;
+
+insert into lte_data.input_form_terms (preferred_term_id, term_label, term_uri, ontology_id)
+select id, 'limestone', 'http://aims.fao.org/aos/agrovoc/c_4342', 'AGROVOC'
+from lte_data.input_form_terms where term_label = 'chalk' and preferred_term_id is null;
 
 insert into lte_data.input_form_terms (preferred_term_id, term_label, term_uri, ontology_id)
 select id, 'ammonium chloride + ammonium nitrate', null, null
