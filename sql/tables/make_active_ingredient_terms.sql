@@ -1,5 +1,5 @@
 create table lte_data.active_ingredient_terms (
-	id int2 not null,
+	id smallserial not null,
 	chemical_name text not null,
 	chebi_uri text null,
 	agrovoc_uri text null,
