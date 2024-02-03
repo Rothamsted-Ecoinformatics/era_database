@@ -10,6 +10,7 @@ create table lte_data.variables (
 	format_mask text null,
     transformation text null,
     validation_rule text null,
+    variable_description text null,
     constraint variable_pk primary key(id),
     constraint unq_variables_variable_label unique (variable_label),
     constraint variables_measured_property_term_id_fk foreign key (measured_property_term_id) references measured_property_terms(id),

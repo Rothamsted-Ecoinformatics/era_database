@@ -13,8 +13,11 @@ insert into lte_data.measured_entity_part_terms (term_label, term_uri, ontology_
 	from lte_data.measured_entity_part_terms where term_uri = 'http://purl.obolibrary.org/obo/PO_0030104';
 
 insert into lte_data.measured_entity_part_terms (term_label, term_uri, ontology_id) values
-	('tuber','http://purl.obolibrary.org/obo/PO_0025522','PO');
+	('shoot axis tuber','http://purl.obolibrary.org/obo/PO_0004543','PO'); -- preferred over tuber
 
+insert into lte_data.measured_entity_part_terms (term_label, term_uri, ontology_id) values
+	('subterranean shoot axis tuber','http://purl.obolibrary.org/obo/PO_0004547','PO');
+	
 insert into lte_data.measured_entity_part_terms (term_label, term_uri, ontology_id, preferred_term_id) 
 	select 'tuber', 'http://aims.fao.org/aos/agrovoc/c_7998', 'AGROVOC', id
 	from lte_data.measured_entity_part_terms where term_uri = 'http://purl.obolibrary.org/obo/PO_0025522';

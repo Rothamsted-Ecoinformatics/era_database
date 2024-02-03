@@ -1,4 +1,5 @@
 insert into lte_data.measurement_unit_terms(symbol, term_label, term_uri, ontology_id) values 
+	('lb bu-1','weight per bushel',null,null);
 	('t ha-1','ton per hectare','http://purl.obolibrary.org/obo/UO_0000323','UO'),
     ('%','percent','http://purl.obolibrary.org/obo/UO_0000187','UO'),
 	('kg hL-1','kilogram per hectolitre','http://purl.obolibrary.org/obo/NCIT_C69106','NCIT'),
