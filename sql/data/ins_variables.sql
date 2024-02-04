@@ -878,6 +878,186 @@ and mept.preferred_term_id is null and mept.term_label = 'straw'
 and dtt.term_label  = 'Float'
 and mut.symbol = '%';
 
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'spring_beans_seed_calcium_content_pct', 'Spring Beans Seed Calcium Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'calcium content trait'
+and met.preferred_term_id is null and met.term_label = 'spring beans'
+and mept.preferred_term_id is null and mept.term_label = 'seed'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'spring_beans_straw_calcium_content_pct', 'Spring Beans Straw Calcium Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'calcium content trait'
+and met.preferred_term_id is null and met.term_label = 'spring beans'
+and mept.preferred_term_id is null and mept.term_label = 'straw'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'spring_beans_seed_sodium_content_pct', 'Spring Beans Seed Sodium Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'sodium content'
+and met.preferred_term_id is null and met.term_label = 'spring beans'
+and mept.preferred_term_id is null and mept.term_label = 'seed'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'spring_beans_straw_sodium_content_pct', 'Spring Beans Straw Sodium Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'sodium content'
+and met.preferred_term_id is null and met.term_label = 'spring beans'
+and mept.preferred_term_id is null and mept.term_label = 'straw'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'spring_beans_seed_nitrogen_content_pct', 'Spring Beans Seed Nitrogen Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'nitrogen content'
+and met.preferred_term_id is null and met.term_label = 'spring beans'
+and mept.preferred_term_id is null and mept.term_label = 'seed'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'spring_beans_straw_nitrogen_content_pct', 'Spring Beans Straw Nitrogen Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'nitrogen content'
+and met.preferred_term_id is null and met.term_label = 'spring beans'
+and mept.preferred_term_id is null and mept.term_label = 'straw'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'spring_beans_seed_potassium_content_pct', 'Spring Beans Seed Potassium Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'potassium content trait'
+and met.preferred_term_id is null and met.term_label = 'spring beans'
+and mept.preferred_term_id is null and mept.term_label = 'seed'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'spring_beans_straw_potassium_content_pct', 'Spring Beans Straw Potassium Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'potassium content trait'
+and met.preferred_term_id is null and met.term_label = 'spring beans'
+and mept.preferred_term_id is null and mept.term_label = 'straw'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'spring_beans_seed_phosphorus_content_pct', 'Spring Beans Seed Phosphorus Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'phosphorus content'
+and met.preferred_term_id is null and met.term_label = 'spring beans'
+and mept.preferred_term_id is null and mept.term_label = 'seed'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'spring_beans_straw_phosphorus_content_pct', 'Spring Beans Straw Phosphorus Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'phosphorus content'
+and met.preferred_term_id is null and met.term_label = 'spring beans'
+and mept.preferred_term_id is null and mept.term_label = 'straw'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'spring_beans_seed_sulfur_content_pct', 'Spring Beans Seed Sulfur Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'sulfur content'
+and met.preferred_term_id is null and met.term_label = 'spring beans'
+and mept.preferred_term_id is null and mept.term_label = 'seed'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'spring_beans_straw_sulfur_content_pct', 'Spring Beans Straw Sulfur Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'sulfur content'
+and met.preferred_term_id is null and met.term_label = 'spring beans'
+and mept.preferred_term_id is null and mept.term_label = 'straw'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
 -- ===================================
 -- MAIZE
 -- ===================================
@@ -906,6 +1086,96 @@ from lte_data.measured_property_terms mpt,
 	lte_data.data_type_terms dtt,
 	lte_data.measurement_unit_terms mut
 where mpt.preferred_term_id is null and mpt.term_label = 'forage yield'
+and met.preferred_term_id is null and met.term_label = 'maize'
+and mept.preferred_term_id is null and mept.term_label = 'shoot system'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'forage_maize_forage_calcium_content_pct', 'Forage Maize Whole Crop (stover) Calcium Content',
+'Measured in the whole crop, or stover above the cut line.'
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'calcium content trait'
+and met.preferred_term_id is null and met.term_label = 'maize'
+and mept.preferred_term_id is null and mept.term_label = 'shoot system'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'forage_maize_forage_sodium_content_pct', 'Forage Maize Whole Crop (stover) Sodium Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'sodium content'
+and met.preferred_term_id is null and met.term_label = 'maize'
+and mept.preferred_term_id is null and mept.term_label = 'shoot system'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'forage_maize_forage_nitrogen_content_pct', 'Forage Maize Whole Crop (stover) Nitrogen Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'nitrogen content'
+and met.preferred_term_id is null and met.term_label = 'maize'
+and mept.preferred_term_id is null and mept.term_label = 'shoot system'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'forage_maize_forage_potassium_content_pct', 'Forage Maize Whole Crop (stover) Potassium Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'potassium content trait'
+and met.preferred_term_id is null and met.term_label = 'maize'
+and mept.preferred_term_id is null and mept.term_label = 'shoot system'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'forage_maize_forage_phosphorus_content_pct', 'Forage Maize Whole Crop (stover) Phosphorus Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'phosphorus content'
+and met.preferred_term_id is null and met.term_label = 'maize'
+and mept.preferred_term_id is null and mept.term_label = 'shoot system'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'forage_maize_forage_sulfur_content_pct', 'Forage Maize Whole Crop (stover) Sulfur Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'sulfur content'
 and met.preferred_term_id is null and met.term_label = 'maize'
 and mept.preferred_term_id is null and mept.term_label = 'shoot system'
 and dtt.term_label  = 'Float'
@@ -1044,6 +1314,186 @@ and mept.preferred_term_id is null and mept.term_label = 'grain'
 and dtt.term_label  = 'Float'
 and mut.symbol = 'kg hL-1';
 
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'winter_oats_grain_calcium_content_pct', 'Winter Oats Grain Calcium Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'calcium content trait'
+and met.preferred_term_id is null and met.term_label = 'winter oats'
+and mept.preferred_term_id is null and mept.term_label = 'grain'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'winter_oats_straw_calcium_content_pct', 'Winter Oats Straw Calcium Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'calcium content trait'
+and met.preferred_term_id is null and met.term_label = 'winter oats'
+and mept.preferred_term_id is null and mept.term_label = 'straw'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'winter_oats_grain_sodium_content_pct', 'Winter Oats Grain Sodium Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'sodium content'
+and met.preferred_term_id is null and met.term_label = 'winter oats'
+and mept.preferred_term_id is null and mept.term_label = 'grain'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'winter_oats_straw_sodium_content_pct', 'Winter Oats Straw Sodium Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'sodium content'
+and met.preferred_term_id is null and met.term_label = 'winter oats'
+and mept.preferred_term_id is null and mept.term_label = 'straw'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'winter_oats_grain_nitrogen_content_pct', 'Winter Oats Grain Nitrogen Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'nitrogen content'
+and met.preferred_term_id is null and met.term_label = 'winter oats'
+and mept.preferred_term_id is null and mept.term_label = 'grain'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'winter_oats_straw_nitrogen_content_pct', 'Winter Oats Straw Nitrogen Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'nitrogen content'
+and met.preferred_term_id is null and met.term_label = 'winter oats'
+and mept.preferred_term_id is null and mept.term_label = 'straw'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'winter_oats_grain_potassium_content_pct', 'Winter Oats Grain Potassium Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'grain potassium content trait'
+and met.preferred_term_id is null and met.term_label = 'winter oats'
+and mept.preferred_term_id is null and mept.term_label = 'grain'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'winter_oats_straw_potassium_content_pct', 'Winter Oats Straw Potassium Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'potassium content trait'
+and met.preferred_term_id is null and met.term_label = 'winter oats'
+and mept.preferred_term_id is null and mept.term_label = 'straw'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'winter_oats_grain_phosphorus_content_pct', 'Winter Oats Grain Phosphorus Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'grain phosphorus content'
+and met.preferred_term_id is null and met.term_label = 'winter oats'
+and mept.preferred_term_id is null and mept.term_label = 'grain'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'winter_oats_straw_phosphorus_content_pct', 'Winter Oats Straw Phosphorus Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'phosphorus content'
+and met.preferred_term_id is null and met.term_label = 'winter oats'
+and mept.preferred_term_id is null and mept.term_label = 'straw'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'winter_oats_grain_sulfur_content_pct', 'Winter Oats Grain Sulfur Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'sulfur content'
+and met.preferred_term_id is null and met.term_label = 'winter oats'
+and mept.preferred_term_id is null and mept.term_label = 'grain'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'winter_oats_straw_sulfur_content_pct', 'Winter Oats Straw Sulfur Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'sulfur content'
+and met.preferred_term_id is null and met.term_label = 'winter oats'
+and mept.preferred_term_id is null and mept.term_label = 'straw'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
 -- ===================================
 -- SPRING OATS
 -- ===================================
@@ -1162,6 +1612,186 @@ and met.preferred_term_id is null and met.term_label = 'spring oats'
 and mept.preferred_term_id is null and mept.term_label = 'grain'
 and dtt.term_label  = 'Float'
 and mut.symbol = 'kg hL-1';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'spring_oats_grain_calcium_content_pct', 'Spring Oats Grain Calcium Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'calcium content trait'
+and met.preferred_term_id is null and met.term_label = 'spring oats'
+and mept.preferred_term_id is null and mept.term_label = 'grain'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'spring_oats_straw_calcium_content_pct', 'Spring Oats Straw Calcium Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'calcium content trait'
+and met.preferred_term_id is null and met.term_label = 'spring oats'
+and mept.preferred_term_id is null and mept.term_label = 'straw'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'spring_oats_grain_sodium_content_pct', 'Spring Oats Grain Sodium Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'sodium content'
+and met.preferred_term_id is null and met.term_label = 'spring oats'
+and mept.preferred_term_id is null and mept.term_label = 'grain'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'spring_oats_straw_sodium_content_pct', 'Spring Oats Straw Sodium Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'sodium content'
+and met.preferred_term_id is null and met.term_label = 'spring oats'
+and mept.preferred_term_id is null and mept.term_label = 'straw'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'spring_oats_grain_nitrogen_content_pct', 'Spring Oats Grain Nitrogen Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'nitrogen content'
+and met.preferred_term_id is null and met.term_label = 'spring oats'
+and mept.preferred_term_id is null and mept.term_label = 'grain'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'spring_oats_straw_nitrogen_content_pct', 'Spring Oats Straw Nitrogen Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'nitrogen content'
+and met.preferred_term_id is null and met.term_label = 'spring oats'
+and mept.preferred_term_id is null and mept.term_label = 'straw'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'spring_oats_grain_potassium_content_pct', 'Spring Oats Grain Potassium Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'grain potassium content trait'
+and met.preferred_term_id is null and met.term_label = 'spring oats'
+and mept.preferred_term_id is null and mept.term_label = 'grain'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'spring_oats_straw_potassium_content_pct', 'Spring Oats Straw Potassium Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'potassium content trait'
+and met.preferred_term_id is null and met.term_label = 'spring oats'
+and mept.preferred_term_id is null and mept.term_label = 'straw'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'spring_oats_grain_phosphorus_content_pct', 'Spring Oats Grain Phosphorus Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'grain phosphorus content'
+and met.preferred_term_id is null and met.term_label = 'spring oats'
+and mept.preferred_term_id is null and mept.term_label = 'grain'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'spring_oats_straw_phosphorus_content_pct', 'Spring Oats Straw Phosphorus Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'phosphorus content'
+and met.preferred_term_id is null and met.term_label = 'spring oats'
+and mept.preferred_term_id is null and mept.term_label = 'straw'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'spring_oats_grain_sulfur_content_pct', 'Spring Oats Grain Sulfur Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'sulfur content'
+and met.preferred_term_id is null and met.term_label = 'spring oats'
+and mept.preferred_term_id is null and mept.term_label = 'grain'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
+
+insert into lte_data.variables (measured_property_term_id, measured_entity_term_id, measured_entity_part_term_id, data_type_id, 
+	measurement_unit_term_id, variable_label, title, variable_description)
+select mpt.id, met.id, mept.id, dtt.id, mut.id, 'spring_oats_straw_sulfur_content_pct', 'Spring Oats Straw Sulfur Content',
+null
+from lte_data.measured_property_terms mpt, 
+	lte_data.measured_entity_terms met,
+	lte_data.measured_entity_part_terms mept,
+	lte_data.data_type_terms dtt,
+	lte_data.measurement_unit_terms mut
+where mpt.preferred_term_id is null and mpt.term_label = 'sulfur content'
+and met.preferred_term_id is null and met.term_label = 'spring oats'
+and mept.preferred_term_id is null and mept.term_label = 'straw'
+and dtt.term_label  = 'Float'
+and mut.symbol = '%';
 
 -- ===================================
 -- POTATOES
