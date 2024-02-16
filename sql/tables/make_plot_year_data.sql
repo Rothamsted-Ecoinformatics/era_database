@@ -6,6 +6,7 @@ create table lte_data.plot_year_data (
 	data_value text null,
 	data_value_code text null,
 	replicate_no text null,
+	time_series date null,
 	data_value_geometry geometry(GEOMETRYCOLLECTION, 4326) NULL, -- WGS_84
 	observations text null,
 	constraint plot_year_data_pk primary key(id),
@@ -22,6 +23,7 @@ comment on column lte_data.plot_year_data.variable_id IS 'This is an FK to the v
 comment on column lte_data.plot_year_data.dataset_id IS 'This is an FK to the dataset the value belongs to.';
 comment on column lte_data.plot_year_data.data_value IS 'This is the measured value.';
 comment on column lte_data.plot_year_data.data_value_code IS 'This is a systemised code value which should be described in the dataset for explaining problematic variables, i.e. missing, below detection limits, etc.';
-comment on column lte_data.plot_year_data.replicate_no IS 'This is a replicate number of the same value is measured multiply for a plot year.';
+comment on column lte_data.plot_year_data.replicate_no IS 'This is a replicate number of the same value is measured multiply for a plot year at the same time.';
+comment on column lte_data.plot_year_data.time_series is 'Time series is used for any measurement taken repeatedly throughout the plot year.'
 comment on column lte_data.plot_year_data.data_value_geometry IS 'This is any specific geometry associated with the data value, such as a sample point. If this value is blank the value should be assumed to refer to the whole plot geometry.';
 comment on column lte_data.plot_year_data.observations IS 'This is for capturing specific observations about the data value.';
