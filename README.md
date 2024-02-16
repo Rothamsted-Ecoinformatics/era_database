@@ -21,6 +21,10 @@ The plot year concept is used to link together:
 - Experiment factor levels applied
 - Measured and observed data.
 
+# Data Model
+[This file illustrates the data model](https://github.com/Rothamsted-Ecoinformatics/era_database/blob/main/era_load_ER_v1.png)
+
+
 Also included are design decisions around the design of the database.
 
 This work is licensed under a
