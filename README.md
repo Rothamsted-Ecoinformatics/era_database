@@ -24,9 +24,9 @@ The plot year concept is used to link together:
 # Data Model
 [This file illustrates the data model](https://github.com/Rothamsted-Ecoinformatics/era_database/blob/main/era_load_ER_v1.png)
 
+[Further information about the design](https://github.com/Rothamsted-Ecoinformatics/era_database/blob/main/sql/Design%20notes.md).
 
-Also included are design decisions around the design of the database.
-
+# License
 This work is licensed under a
 [Creative Commons Attribution 4.0 International License][cc-by].
 
