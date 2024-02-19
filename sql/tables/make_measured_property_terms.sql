@@ -4,6 +4,8 @@ create table lte_data.measured_property_terms (
 	term_label text not null,
 	term_uri text null,
 	ontology_id text null,
+	usage_notes text null,
+	other_notes text null
 	constraint measured_property_term_pk primary key(id),
 	constraint measured_property_terms_ontology_id_fk foreign key (ontology_id) references ontologies(id),
 	constraint measured_property_terms_preferred_term_id foreign key (preferred_term_id) references measured_property_terms(id),
