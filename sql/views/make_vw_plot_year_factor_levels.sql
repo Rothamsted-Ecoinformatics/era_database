@@ -4,6 +4,7 @@ create or replace view lte_data.vw_plot_year_factor_levels as
 select vpy.experiment_id, vpy.experiment_code, vpy.plot_label, vpy.plot_year, vpy.treatment_label, 
 	ef.factor_name, efl.factor_level_code, efl.factor_level_label,
 	ift.term_label as input_form_term_label, p.product_name,
+	pyfl.rotation_phase,
 	vpy.plot_year_id, pyfl.id as plot_year_factor_level_id, pyfl.experiment_factor_level_id,
 	pyfl.product_id, pyfl.input_form_term_id, pyfl.input_form_amount, pyfl.input_form_amount_unit_id,
 	pyfl.nutrient_term_id, pyfl.nutrient_amount, pyfl.nutrient_amount_unit_id,
