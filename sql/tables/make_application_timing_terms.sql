@@ -5,8 +5,8 @@ create table lte_data.application_timing_terms (
 	term_uri text null,
 	ontology_id text null,
 	constraint application_timing_terms_pk primary key(id),
-	constraint application_timing_terms_ontology_id foreign key (ontology_id) references ontologies(id),
-	constraint application_timing_terms_preferred_term_id foreign key (preferred_term_id) references application_timing_terms(id),
+	constraint application_timing_terms_ontology_id foreign key (ontology_id) references lte_data.ontologies(id),
+	constraint application_timing_terms_preferred_term_id foreign key (preferred_term_id) references lte_data.application_timing_terms(id),
 	constraint application_timing_terms_term_uri_unq unique (term_uri)
 );
 

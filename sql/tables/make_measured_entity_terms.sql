@@ -7,8 +7,8 @@ create table lte_data.measured_entity_terms (
 	usage_notes text null,
 	other_notes text null,
 	constraint measured_entity_term_pk primary key(id),
-	constraint measured_entity_terms_ontology_id_fk foreign key (ontology_id) references ontologies(id),
-	constraint measured_entity_terms_preferred_term_id foreign key (preferred_term_id) references measured_entity_terms(id),
+	constraint measured_entity_terms_ontology_id_fk foreign key (ontology_id) references lte_data.ontologies(id),
+	constraint measured_entity_terms_preferred_term_id foreign key (preferred_term_id) references lte_data.measured_entity_terms(id),
 	constraint measured_entity_terms_term_uri_unq unique (term_uri)
 );
 

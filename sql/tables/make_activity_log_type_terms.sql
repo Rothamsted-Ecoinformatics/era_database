@@ -5,8 +5,8 @@ create table lte_data.activity_log_type_terms (
 	term_uri text null,
 	ontology_id text null,
 	constraint activity_log_type_terms_pk primary key(id),
-	constraint activity_log_type_terms_ontology_id foreign key (ontology_id) references ontologies(id),
-	constraint activity_log_type_terms_preferred_term_id foreign key (preferred_term_id) references activity_log_type_terms(id),
+	constraint activity_log_type_terms_ontology_id foreign key (ontology_id) references lte_data.ontologies(id),
+	constraint activity_log_type_terms_preferred_term_id foreign key (preferred_term_id) references lte_data.activity_log_type_terms(id),
 	constraint activity_log_type_terms_term_uri_unq unique (term_uri)
 );
 

@@ -7,7 +7,7 @@ create table lte_data.products (
     expiry_date date null,
     product_notes text null,
     constraint products_pk primary key(id),
-    constraint products_product_role_id_fk foreign key (product_role_id) references product_role_terms(id)
+    constraint products_product_role_id_fk foreign key (product_role_id) references lte_data.product_role_terms(id)
 );
 
 comment on table lte_data.products is 'A list of products used as inputs. These are typically tradenames.';
