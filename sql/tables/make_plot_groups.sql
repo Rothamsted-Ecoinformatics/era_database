@@ -4,7 +4,7 @@ create table lte_data.plot_groups (
     label text not null,
     notes text null,
     constraint plot_groups_pk primary key(id),
-    constraint plot_groups_plot_group_collection_fk foreign key (plot_group_collection_id) references plot_group_collections(id)
+    constraint plot_groups_plot_group_collection_fk foreign key (plot_group_collection_id) references lte_data.plot_group_collections(id)
 );
 
 comment on table lte_data.plot_groups is 'plot_group_collections is used to identify a group of plots related by some 

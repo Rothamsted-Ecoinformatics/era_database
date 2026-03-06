@@ -9,8 +9,8 @@ create table lte_data.plot_years (
 	description text null,
 	deviations text null,
 	constraint plot_years_pk primary key(id),
-	constraint plot_years_plot_id_fk foreign key (plot_id) references plots(id),
-	constraint plot_years_crop_id_fk foreign key (crop_id) references crops(id)
+	constraint plot_years_plot_id_fk foreign key (plot_id) references lte_data.plots(id),
+	constraint plot_years_crop_id_fk foreign key (crop_id) references lte_data.crops(id)
 );
 
 comment on table lte_data.plot_years is 'This table is used to connect a plot to the data for that plot in a harvest year and to connect the plot to the factor levels applied to it.';

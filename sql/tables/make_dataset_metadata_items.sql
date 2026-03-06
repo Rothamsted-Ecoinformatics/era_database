@@ -6,7 +6,7 @@ create table lte_data.dataset_metadata_items (
 	item_label_uri text null,
 	item_value_uri text null,
 	constraint dataset_metadata_item_pk primary key (id),
-	constraint dataset_metadata_items_dataset_id_fk foreign key (dataset_id) references datasets(id)
+	constraint dataset_metadata_items_dataset_id_fk foreign key (dataset_id) references lte_data.datasets(id)
 );
 
 comment on table lte_data.dataset_metadata_items is 'dataset_metadata_items is used to record additional descriptive metadata for a dataset.

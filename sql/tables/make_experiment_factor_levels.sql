@@ -6,8 +6,8 @@ create table lte_data.experiment_factor_levels (
 	factor_level_label text not null,
 	description text null,
 	constraint experiment_factor_levels_pk primary key(id),
-	constraint experiment_factor_levels_experiment_factor_id_fk foreign key (experiment_factor_id) references experiment_factors(id),
-	constraint experiment_factor_levels_factor_level_terms_id_fk foreign key (factor_level_term_id) references factor_level_terms(id)
+	constraint experiment_factor_levels_experiment_factor_id_fk foreign key (experiment_factor_id) references lte_data.experiment_factors(id),
+	constraint experiment_factor_levels_factor_level_terms_id_fk foreign key (factor_level_term_id) references lte_data.factor_level_terms(id)
 );
 
 comment on table lte_data.experiment_factor_levels is 'This table is used to describe factor levels for an experiment. 
