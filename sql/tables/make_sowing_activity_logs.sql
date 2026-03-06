@@ -18,11 +18,11 @@ create table lte_data.sowing_activity_logs (
 	log_notes text null,
 	seed_dressings text null,
 	constraint sowing_activity_logs_pk primary key (id),
-	constraint sowing_activity_logs_plot_year_id_fk foreign key (plot_year_id) references plot_years(id),
-	constraint sowing_activity_logs_crop_id_fk foreign key (crop_id) references crops(id),
-	constraint sowing_activity_logs_activity_log_type_term_id foreign key (activity_log_type_term_id) references activity_log_type_terms(id),
-	constraint sowing_activity_logs_equipment_id foreign key (equipment_id) references equipment_type_terms(id),
-	constraint sowing_activity_logs_tractor_id foreign key (tractor_id) references equipment_type_terms(id)
+	constraint sowing_activity_logs_plot_year_id_fk foreign key (plot_year_id) references lte_data.plot_years(id),
+	constraint sowing_activity_logs_crop_id_fk foreign key (crop_id) references lte_data.crops(id),
+	constraint sowing_activity_logs_activity_log_type_term_id foreign key (activity_log_type_term_id) references lte_data.activity_log_type_terms(id),
+	constraint sowing_activity_logs_equipment_id foreign key (equipment_id) references lte_data.equipment_type_terms(id),
+	constraint sowing_activity_logs_tractor_id foreign key (tractor_id) references lte_data.equipment_type_terms(id)
 );
 
 comment on table lte_data.sowing_activity_logs is 'sowing_activity_logs records sowing information for a plot year sowing. There will be duplication within a year where different plots are growing the same crop, but this is the simplest way to manage logs with necessary plot year granularity.';
