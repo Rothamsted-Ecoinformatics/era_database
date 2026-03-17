@@ -5,8 +5,8 @@ create table lte_data.product_role_terms (
 	term_uri text null,
 	ontology_id text null,
 	constraint product_role_term_pk primary key(id),
-	constraint product_role_terms_ontology_id_fk foreign key (ontology_id) references ontologies(id),
-	constraint product_role_terms_preferred_term_id foreign key (preferred_term_id) references product_role_terms(id),
+	constraint product_role_terms_ontology_id_fk foreign key (ontology_id) references lte_data.ontologies(id),
+	constraint product_role_terms_preferred_term_id foreign key (preferred_term_id) references lte_data.product_role_terms(id),
 	constraint product_role_terms_term_uri_unq unique (term_uri)
 );
 

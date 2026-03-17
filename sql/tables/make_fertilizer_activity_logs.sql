@@ -25,14 +25,14 @@ create table lte_data.fertilizer_activity_logs (
 	application_method_id int2 NULL,
 	log_notes text null,
 	constraint fertilizer_activity_logs_pk primary key (id),
-	constraint fertilizer_activity_logs_plot_year_id_fk foreign key (plot_year_id) references plot_years(id),
-	constraint fertilizer_activity_logs_activity_log_type_term_id_fk foreign key (activity_log_type_term_id) references activity_log_type_terms(id),
-	constraint fertilizer_activity_logs_input_form_id_fk foreign key (input_form_id) references input_form_terms(id),
-	constraint fertilizer_activity_logs_nutrient_id_fk foreign key (nutrient_id) references nutrient_terms(id),
-	constraint fertilizer_activity_logs_product_id_fk foreign key (product_id) references products(id),
-	constraint fertilizer_activity_logs_application_method_id_fk foreign key (application_method_id) references application_method_terms(id),
-	constraint fertilizer_activity_logs_equipment_id_fk foreign key (equipment_id) references equipment(id),
-	constraint fertilizer_activity_logs_tractor_id_fk foreign key (tractor_id) references equipment(id)
+	constraint fertilizer_activity_logs_plot_year_id_fk foreign key (plot_year_id) references lte_data.plot_years(id),
+	constraint fertilizer_activity_logs_activity_log_type_term_id_fk foreign key (activity_log_type_term_id) references lte_data.activity_log_type_terms(id),
+	constraint fertilizer_activity_logs_input_form_id_fk foreign key (input_form_id) references lte_data.input_form_terms(id),
+	constraint fertilizer_activity_logs_nutrient_id_fk foreign key (nutrient_id) references lte_data.nutrient_terms(id),
+	constraint fertilizer_activity_logs_product_id_fk foreign key (product_id) references lte_data.products(id),
+	constraint fertilizer_activity_logs_application_method_id_fk foreign key (application_method_id) references lte_data.application_method_terms(id),
+	constraint fertilizer_activity_logs_equipment_id_fk foreign key (equipment_id) references lte_data.equipment(id),
+	constraint fertilizer_activity_logs_tractor_id_fk foreign key (tractor_id) references lte_data.equipment(id)
 );
 
 comment on table lte_data.fertilizer_activity_logs is 'fertilizer_activity_logs records information about organic and inorganic fertilizer applications for a plot year. 

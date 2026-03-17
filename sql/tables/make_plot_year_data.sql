@@ -10,9 +10,9 @@ create table lte_data.plot_year_data (
 	data_value_geometry geometry(GEOMETRYCOLLECTION, 4326) NULL, -- WGS_84
 	observations text null,
 	constraint plot_year_data_pk primary key(id),
-	constraint plot_year_data_plot_year_id_fk foreign key (plot_year_id) references plot_years(id),
-	constraint plot_year_data_variable_id_fk foreign key (variable_id) references variables(id),
-	constraint plot_year_data_dataset_id_fk foreign key (dataset_id) references datasets(id)
+	constraint plot_year_data_plot_year_id_fk foreign key (plot_year_id) references lte_data.plot_years(id),
+	constraint plot_year_data_variable_id_fk foreign key (variable_id) references lte_data.variables(id),
+	constraint plot_year_data_dataset_id_fk foreign key (dataset_id) references lte_data.datasets(id)
 );
 
 comment on table lte_data.plot_year_data is 'plot_year_data is used to manage plot year data. The table is essentially a name value pair structure.';

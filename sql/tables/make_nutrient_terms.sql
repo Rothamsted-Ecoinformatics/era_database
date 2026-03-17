@@ -6,8 +6,8 @@ create table lte_data.nutrient_terms (
 	term_uri text,
 	ontology_id text,
 	constraint nutrient_terms_pk primary key(id),
-	constraint nutrient_terms_ontology_id foreign key (ontology_id) references ontologies(id),
-	constraint nutrient_terms_preferred_term_id foreign key (preferred_term_id) references nutrient_terms(id),
+	constraint nutrient_terms_ontology_id foreign key (ontology_id) references lte_data.ontologies(id),
+	constraint nutrient_terms_preferred_term_id foreign key (preferred_term_id) references lte_data.nutrient_terms(id),
     constraint nutrient_terms_uri_unq unique (term_uri)
 );
 

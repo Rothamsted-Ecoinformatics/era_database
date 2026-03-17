@@ -25,15 +25,15 @@ create table lte_data.plot_year_factor_levels (
 	original_nutrient_amount_unit_id smallint null,
 	original_nutrient_amount_conversion_factor text null,
 	constraint plot_year_factor_levels_pk primary key(id),
-	constraint plot_year_factor_levels_plot_year_id_fk foreign key (plot_year_id) references plot_years(id),
-	constraint plot_year_factor_levels_experiment_factor_level_id_fk foreign key (experiment_factor_level_id) references experiment_factor_levels(id),
-	constraint plot_year_factor_levels_input_form_term_id_fk foreign key (input_form_term_id) references input_form_terms(id),
-	constraint plot_year_factor_levels_input_form_amount_unit_id_fk foreign key (input_form_amount_unit_id) references input_form_amount_units(id),
-	constraint plot_year_factor_levels_nutrient_term_id_fk foreign key (nutrient_term_id) references nutrient_terms(id),
-	constraint plot_year_factor_levels_nutrient_amount_unit_id_fk foreign key (nutrient_amount_unit_id) references nutrient_amount_units(id),
-	constraint plot_year_factor_levels_product_id_fk foreign key (product_id) references products(id),
-	constraint plot_year_factor_levels_application_timing_term_id_fk foreign key (application_timing_term_id) references application_timing_terms(id),
-	constraint plot_year_factor_levels_application_method_term_id_fk foreign key (application_method_term_id) references application_method_terms(id)
+	constraint plot_year_factor_levels_plot_year_id_fk foreign key (plot_year_id) references lte_data.plot_years(id),
+	constraint plot_year_factor_levels_experiment_factor_level_id_fk foreign key (experiment_factor_level_id) references lte_data.experiment_factor_levels(id),
+	constraint plot_year_factor_levels_input_form_term_id_fk foreign key (input_form_term_id) references lte_data.input_form_terms(id),
+	constraint plot_year_factor_levels_input_form_amount_unit_id_fk foreign key (input_form_amount_unit_id) references lte_data.input_form_amount_units(id),
+	constraint plot_year_factor_levels_nutrient_term_id_fk foreign key (nutrient_term_id) references lte_data.nutrient_terms(id),
+	constraint plot_year_factor_levels_nutrient_amount_unit_id_fk foreign key (nutrient_amount_unit_id) references lte_data.nutrient_amount_units(id),
+	constraint plot_year_factor_levels_product_id_fk foreign key (product_id) references lte_data.products(id),
+	constraint plot_year_factor_levels_application_timing_term_id_fk foreign key (application_timing_term_id) references lte_data.application_timing_terms(id),
+	constraint plot_year_factor_levels_application_method_term_id_fk foreign key (application_method_term_id) references lte_data.application_method_terms(id)
 );
 
 comment on table lte_data.plot_year_factor_levels is 'This table is used to describe a factor level for an experiment in a 

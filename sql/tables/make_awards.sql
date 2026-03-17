@@ -1,4 +1,4 @@
-create table awards (
+create table lte_data.awards (
 	id smallserial not null,
 	funder_id int2 not null,
 	award_number text not null,
@@ -7,7 +7,7 @@ create table awards (
 	title text null,
 	award_uri text not null,
 	constraint awards_pk primary key(id),
-	CONSTRAINT award_award_id_fk foreign key (funder_id) references funders(id)
+	CONSTRAINT award_award_id_fk foreign key (funder_id) references lte_data.funders(id)
 );
 
 comment on table lte_data.awards is 'awards is used to identify the funding awards used to collect and manage datasets. With the funders table, awards conforms to the fields 

@@ -11,7 +11,7 @@ create table lte_data.datasets (
 	dataset_description text null,
 	version_history_notes text null,
 	constraint dataset_pk primary key(id),
-	CONSTRAINT dataset_experiment_id_fk foreign key (experiment_id) references experiments(id)
+	CONSTRAINT dataset_experiment_id_fk foreign key (experiment_id) references lte_data.experiments(id)
 );
 
 comment on table lte_data.datasets is 'datasets is a grouping of logically related observation and measurement records. Records would normally be 

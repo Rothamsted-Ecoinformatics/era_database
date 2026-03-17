@@ -5,8 +5,8 @@ create table lte_data.dataset_protocols (
 	protocol_uri text NULL,
 	protocol_description text NOT NULL,
 	constraint dataset_protocols_pk primary key(id),
-	constraint dataset_protocols_dataset_id_fk foreign key (dataset_id) references datasets(id),
-	constraint dataset_protocols_protocol_type_id_fk foreign key (protocol_type_id) references protocol_types(id)
+	constraint dataset_protocols_dataset_id_fk foreign key (dataset_id) references lte_data.datasets(id),
+	constraint dataset_protocols_protocol_type_id_fk foreign key (protocol_type_id) references lte_data.protocol_types(id)
 );
 
 comment on table lte_data.dataset_protocols is 'dataset_protocols is used to describe the protocols used for generating a particular dataset. 

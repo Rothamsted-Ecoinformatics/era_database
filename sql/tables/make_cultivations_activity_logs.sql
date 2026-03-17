@@ -12,10 +12,10 @@ create table lte_data.cultivation_activity_logs (
 	throw_direction	text null,
 	plough_direction text null,	
 	constraint cultivation_activity_logs_pk primary key (id),
-	constraint cultivation_activity_logs_plot_year_id_fk foreign key (plot_year_id) references plot_years(id),
-	constraint cultivation_activity_logs_activity_log_type_term_id foreign key (activity_log_type_term_id) references activity_log_type_terms(id),
-	constraint cultivation_activity_logs_equipment_id foreign key (equipment_id) references equipment(id),
-	constraint cultivation_activity_logs_tractor_id foreign key (tractor_id) references equipment(id)
+	constraint cultivation_activity_logs_plot_year_id_fk foreign key (plot_year_id) references lte_data.plot_years(id),
+	constraint cultivation_activity_logs_activity_log_type_term_id foreign key (activity_log_type_term_id) references lte_data.activity_log_type_terms(id),
+	constraint cultivation_activity_logs_equipment_id foreign key (equipment_id) references lte_data.equipment(id),
+	constraint cultivation_activity_logs_tractor_id foreign key (tractor_id) references lte_data.equipment(id)
 );
 
 comment on table lte_data.cultivation_activity_logs is 'cultivation_activity_logs records cultivation information for a plot year. 

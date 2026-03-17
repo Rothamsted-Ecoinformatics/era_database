@@ -1,3 +1,4 @@
+-- We need organisations
 CREATE TABLE lte_data.contributors (
 	id smallserial NOT NULL,
 	organisation_id smallint NULL,
@@ -6,7 +7,7 @@ CREATE TABLE lte_data.contributors (
 	orcid text null,
 	honorific text NULL,
 	CONSTRAINT contributors_pk PRIMARY KEY (id),
-	CONSTRAINT contributors_organisations_fk FOREIGN KEY (organisation_id) REFERENCES organisations(id)
+	CONSTRAINT contributors_organisations_fk FOREIGN KEY (organisation_id) REFERENCES lte_data.organisations(id)
 );
 
 comment on table lte_data.contributors is 'contributors captures information about the people who have contributed to the development of datasets.';

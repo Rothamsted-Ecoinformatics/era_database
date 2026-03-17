@@ -1,3 +1,4 @@
+-- Here organisation should be an organisation_id
 CREATE TABLE lte_data.farms (
 	id char(1) NOT NULL,
 	farm_name text not null,
@@ -7,5 +8,5 @@ CREATE TABLE lte_data.farms (
 	address_region text NOT NULL,
 	address_country text NOT NULL,
 	postal_code text NOT NULL,
-	constraint farms_pk primary key (id)	
+	constraint farms_pk primary key (id),
 );

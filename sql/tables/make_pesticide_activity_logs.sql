@@ -25,12 +25,12 @@ create table lte_data.pesticide_activity_logs (
 	weather text NULL,
 	log_notes text null,
 	constraint pesticide_activity_logs_pk primary key (id),
-	constraint pesticide_activity_logs_plot_year_id_fk foreign key (plot_year_id) references plot_years(id),
-	constraint pesticide_activity_logs_activity_log_type_term_id_fk foreign key (activity_log_type_term_id) references activity_log_type_terms(id),
-	constraint pesticide_activity_logs_product_id_fk foreign key (product_id) references products(id),
-	constraint pesticide_activity_logs_application_method_id_fk foreign key (application_method_id) references application_method_terms(id),
-	constraint pesticide_activity_logs_equipment_id_fk foreign key (equipment_id) references equipment(id),
-	constraint pesticide_activity_logs_tractor_id_fk foreign key (tractor_id) references equipment(id)
+	constraint pesticide_activity_logs_plot_year_id_fk foreign key (plot_year_id) references lte_data.plot_years(id),
+	constraint pesticide_activity_logs_activity_log_type_term_id_fk foreign key (activity_log_type_term_id) references lte_data.activity_log_type_terms(id),
+	constraint pesticide_activity_logs_product_id_fk foreign key (product_id) references lte_data.products(id),
+	constraint pesticide_activity_logs_application_method_id_fk foreign key (application_method_id) references lte_data.application_method_terms(id),
+	constraint pesticide_activity_logs_equipment_id_fk foreign key (equipment_id) references lte_data.equipment(id),
+	constraint pesticide_activity_logs_tractor_id_fk foreign key (tractor_id) references lte_data.equipment(id)
 );
 
 comment on table lte_data.pesticide_activity_logs is 'pesticide_activity_logs records information about pesticide applications for a plot year. 
