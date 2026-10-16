@@ -6,9 +6,9 @@ create table lte_data.participant_terms (
 	ontology_id text null,
 	usage_notes text null,
 	other_notes text null,
-	constraint participant_termss_id_pk primary key(id),
+	constraint participant_terms_id_pk primary key(id),
 	constraint participant_terms_ontology_id_fk foreign key (ontology_id) references lte_data.ontologies(id),
-	constraint participant_terms_preferred_term_id foreign key (preferred_term_id) references lte_data.participants(id),
+	constraint participant_terms_preferred_term_id foreign key (preferred_term_id) references lte_data.participant_terms(id),
 	constraint participant_terms_uri_unq unique (term_uri)
 );
 
