@@ -6,4 +6,5 @@ VALUES
     ('root system', 'http://purl.obolibrary.org/obo/PO_0025025', 'PO', null, null),
     ('seed', 'http://purl.obolibrary.org/obo/PO_0009010', 'PO', null, null),
     ('crop canopy', 'http://purl.obolibrary.org/obo/ENVO_01001241', 'ENVO', null, null),
+    ('straw', 'http://purl.obolibrary.org/obo/ENVO_00003869', 'ENVO', null, null),
 ON CONFLICT (term_uri) DO NOTHING;
